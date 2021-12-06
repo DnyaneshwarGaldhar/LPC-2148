@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\ir_lcd_lpc.o"
+".\objects\startup.o"
+--strict --scatter ".\Objects\IR_LCD_LPC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\IR_LCD_LPC.map" -o .\Objects\IR_LCD_LPC.axf
