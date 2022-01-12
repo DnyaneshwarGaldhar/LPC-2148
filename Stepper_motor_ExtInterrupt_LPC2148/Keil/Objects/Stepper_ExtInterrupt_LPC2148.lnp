@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\stepper_extinterrupt_lpc2148.o"
+--strict --scatter ".\Objects\Stepper_ExtInterrupt_LPC2148.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Stepper_ExtInterrupt_LPC2148.map" -o .\Objects\Stepper_ExtInterrupt_LPC2148.axf

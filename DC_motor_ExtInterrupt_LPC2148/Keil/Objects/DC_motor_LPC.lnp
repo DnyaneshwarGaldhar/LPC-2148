@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\dc_motor_lpc.o"
+--strict --scatter ".\Objects\DC_motor_LPC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\DC_motor_LPC.map" -o .\Objects\DC_motor_LPC.axf
